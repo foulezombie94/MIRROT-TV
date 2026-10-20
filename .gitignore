@@ -1,0 +1,4 @@
+.vercel/
+.openai/
+node_modules/
+*.log

@@ -1,0 +1,7 @@
+{
+  "name": "phonemirror-downloads",
+  "private": true,
+  "version": "0.2.0",
+  "scripts": {"build": "node scripts/verify.mjs", "test": "node scripts/verify.mjs"},
+  "engines": {"node": ">=22"}
+}
