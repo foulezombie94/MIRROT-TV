@@ -37,8 +37,8 @@ Ajouter des APK avec de nouveaux noms de version, actualiser les empreintes SHA-
 
 Les clés de signature, mots de passe et identifiants Vercel ne sont pas distribués dans ce dépôt.
 
-## Préversion AirPlay 0.4.1
+## Préversion AirPlay 0.4.2
 
-`public/downloads/PhoneMirror-TV-AirPlay-0.4.1.apk` est une application TV distincte (`local.phonemirror.tv.airplay`) qui reçoit la recopie d'écran native de l'iPhone. Elle peut coexister avec les APK Android 0.3.1. Le site conserve ces deux téléchargements et ajoute un troisième téléchargement réservé à AirPlay.
+`public/downloads/PhoneMirror-TV-AirPlay-0.4.2.apk` est une application TV distincte (`local.phonemirror.tv.airplay`) qui reçoit la recopie d'écran native de l'iPhone. Elle peut coexister avec les APK Android 0.3.1. Le site conserve ces deux téléchargements et ajoute un troisième téléchargement réservé à AirPlay.
 
-Cette préversion est compilée et signée, mais n'est pas validée sur un iPhone et une télévision physiques. Les 49 tests unitaires et le test des deux origines de latence passent ; les derniers passages du probe en émulateur ont saturé la file et sont non concluants pour la performance. Consulter `AIRPLAY-0.4.1.md` et `AUDIT-FLUIDITE-AIRPLAY-0.4.1.md` pour les limites et l'état exact des vérifications. Les sources adaptées sous GPL-3.0 et les notices sont fournies dans `PhoneMirror-TV-AirPlay-0.4.1-sources.zip` ; aucune clé de signature n'y est incluse. `RELEASES.json` distingue les versions et canaux des trois APK, et `SHA256.json` fournit leurs empreintes.
+Cette préversion corrige le moteur vidéo/audio : réception asynchrone bornée, configuration adaptative, horloge A/V, écritures PCM et cycle de vie natif. Les 69 tests unitaires AirPlay, les scénarios de rotation, de reprise et de lecture AAC-LC passent sur émulateur. Le 1080p60 et la stabilité prolongée restent à vérifier sur iPhone et TV physiques. Consulter `AIRPLAY-0.4.2.md` et `AUDIT-FLUIDITE-AIRPLAY-0.4.2.md`. Sources adaptées et notices GPL-3.0 : `PhoneMirror-TV-AirPlay-0.4.2-sources.zip`. Les clés et mots de passe ne sont pas distribués.
