@@ -1,6 +1,6 @@
 # PhoneMirror — site de téléchargement
 
-Site statique en français pour télécharger les deux APK signés PhoneMirror 0.2.0. Responsive, accessible au clavier, sans dépendance externe ni étape de compilation des APK.
+Site statique en français pour télécharger les deux APK signés PhoneMirror 0.3.1. Responsive, accessible au clavier, sans dépendance externe ni étape de compilation des APK.
 
 ## Vercel
 
@@ -22,10 +22,10 @@ Pour une prévisualisation locale : `python -m http.server 4173 --directory publ
 
 ## Fichiers distribués
 
-- `public/downloads/PhoneMirror-Android-0.2.0.apk` : `local.phonemirror.android`, Android 8 minimum ; audio interne à partir d'Android 10.
-- `public/downloads/PhoneMirror-TV-0.2.0.apk` : `local.phonemirror.tv`, Android TV / Google TV, Android 8 minimum.
+- `public/downloads/PhoneMirror-Android-0.3.1.apk` : `local.phonemirror.android`, Android 8 minimum ; audio interne à partir d'Android 10.
+- `public/downloads/PhoneMirror-TV-0.3.1.apk` : `local.phonemirror.tv`, Android TV / Google TV, Android 8 minimum.
 - `public/downloads/SHA256.json` : intégrité des deux APK.
-- `public/downloads/AUDIT-0.2.0.md` : bilan des tests et limites connues.
+- `public/downloads/CORRECTIF-ROTATION-0.3.1.md` : bilan des tests et limites connues.
 
 Les signatures APK v2/v3 ont été vérifiées avant ajout au dépôt. Les deux APK signés ont été installés et lancés dans un émulateur Android 15. Cela ne garantit pas leur compatibilité avec tous les modèles ou toutes les versions Android. Une ancienne application signée avec une autre clé doit être désinstallée avant cette installation ; sauvegarder ses éventuelles données utiles auparavant.
 
