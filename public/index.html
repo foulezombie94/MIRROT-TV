@@ -13,7 +13,7 @@
   <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="arrow" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol><symbol id="phone" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M10 5h4m-3 14h2"/></symbol><symbol id="tv" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8m-4-4v4"/></symbol><symbol id="mark" viewBox="0 0 24 24"><rect x="2" y="3" width="15" height="12" rx="2"/><rect x="12" y="10" width="9" height="12" rx="2"/></symbol></svg>
   <header class="header wrap">
     <a class="brand" href="#" aria-label="PhoneMirror, accueil"><span class="brand-icon"><svg><use href="#mark"/></svg></span>PhoneMirror<span class="brand-dot">®</span></a>
-    <nav aria-label="Navigation principale"><a href="#installation">Installation</a><a class="nav-download" href="#telecharger">Les applications <span aria-hidden="true">↗</span></a></nav>
+    <nav aria-label="Navigation principale"><a href="#airplay">iPhone / AirPlay</a><a href="#installation">Installation</a><a class="nav-download" href="#telecharger">Les applications <span aria-hidden="true">↗</span></a></nav>
   </header>
   <main>
     <section class="hero wrap" aria-labelledby="hero-title">
@@ -55,6 +55,18 @@
       </div>
       <aside class="beta-note"><span class="note-icon" aria-hidden="true">i</span><p><strong>Installez les deux applications à jour.</strong> Cette version améliore les changements paysage/portrait en WebRTC. Le profil 1080p / 60 i/s dépend du téléphone, du récepteur et du réseau ; sa stabilité prolongée reste à valider sur vos appareils. <a href="/downloads/CORRECTIF-ROTATION-0.3.1.md" download>Lire le compte rendu ↗</a></p></aside>
     </section>
+    <section class="downloads wrap" id="airplay" aria-labelledby="airplay-title">
+      <div class="section-heading"><div><div class="eyebrow">NOUVEAU · IPHONE ET IPAD</div><h2 id="airplay-title">Votre iPhone.<br>Sans app à installer dessus.</h2></div><span class="version">AirPlay 0.4.0 <span>·</span> Préversion</span></div>
+      <article class="download-card tv-card">
+        <div class="card-top"><span class="app-icon"><svg><use href="#tv"/></svg></span><span class="device-label">RÉCEPTEUR AIRPLAY · À INSTALLER SUR LA TV</span></div>
+        <h3>PhoneMirror TV <span>AirPlay</span></h3>
+        <p>Installez ce récepteur sur Android TV ou Google TV. Ouvrez <strong>iPhone / iPad · Ouvrir AirPlay</strong>, puis sur l’iPhone : <strong>Centre de contrôle → Recopie de l’écran → PhoneMirror</strong>. Les deux appareils doivent être sur le même réseau.</p>
+        <div class="specs"><span>Android TV 8+</span><span>Image et son AAC</span><span>Application TV séparée</span></div>
+        <a class="button primary download-button" href="/downloads/PhoneMirror-TV-AirPlay-0.4.0.apk" download="PhoneMirror-TV-AirPlay-0.4.0.apk" type="application/vnd.android.package-archive">Télécharger le récepteur TV pour iPhone <svg><use href="#arrow"/></svg></a>
+        <div class="file-meta"><span>Fichier APK · 55,9 Mo · à installer sur la TV</span><span>v0.4.0-airplay</span></div>
+      </article>
+      <aside class="beta-note"><span class="note-icon" aria-hidden="true">i</span><p><strong>Préversion compilée et signée, sans validation sur iPhone réel.</strong> Elle conserve les applications Android 0.3.1 existantes. La fluidité, la synchronisation audio/vidéo et le 1080p60 restent à vérifier sur vos appareils. Les contenus DRM et l’audio seul ALAC ne sont pas pris en charge. Activez AirPlay uniquement sur un réseau de confiance. <a href="/downloads/AIRPLAY-0.4.0.md" download>Guide et limites ↗</a> · <a href="/downloads/PhoneMirror-TV-AirPlay-0.4.0-sources.zip" download>Sources GPL-3.0 ↗</a></p></aside>
+    </section>
     <section class="installation wrap" id="installation" aria-labelledby="installation-title">
       <div class="section-heading"><div><div class="eyebrow">QUELQUES ÉTAPES POUR COMMENCER</div><h2 id="installation-title">Du petit au grand écran.</h2></div><p>Un téléphone. Une TV compatible.<br>Le même réseau Wi-Fi.</p></div>
       <ol class="steps">
@@ -67,7 +79,7 @@
       <details><summary>Et pour une TV Samsung ou LG ?<span>+</span></summary><p>Les APK Android ne s’installent pas directement sur Samsung Tizen ou LG webOS. Utilisez un Chromecast, une connexion DLNA compatible HLS/H.264/AAC, ou un boîtier Android TV / Google TV avec PhoneMirror TV. La compatibilité dépend du modèle.</p></details>
       <details><summary>Comment fonctionne le son ?<span>+</span></summary><p>Le son interne est disponible à partir d’Android 10, après autorisation. Le microphone n’est pas utilisé comme source. Certaines applications empêchent la capture de leur son ou de leur image. Un réglage de décalage audio est disponible dans Qualité.</p></details>
       <details><summary>Est-ce adapté au jeu ou au tactile à distance ?<span>+</span></summary><p>Le mode WebRTC avec PhoneMirror TV réduit l'attente liée aux segments vidéo. La réactivité réelle dépend des appareils et du Wi-Fi ; aucune latence de jeu n'est garantie. Google Cast et DLNA restent sur un flux HLS avec davantage de délai. Les APK n'ajoutent pas de contrôle tactile à distance.</p></details>
-      <details><summary>Où vérifier les fichiers téléchargés ?<span>+</span></summary><p>Les deux APK sont signés. Vous pouvez comparer leur empreinte SHA-256 avec le <a href="/downloads/SHA256.json" download>fichier de vérification</a>. Une ancienne version signée avec une autre clé doit être désinstallée avant cette installation ; sauvegardez d’abord ses éventuelles données utiles.</p></details>
+      <details><summary>Où vérifier les fichiers téléchargés ?<span>+</span></summary><p>Les trois APK sont signés. Le récepteur AirPlay est une application séparée. Vous pouvez comparer leur empreinte SHA-256 avec le <a href="/downloads/SHA256.json" download>fichier de vérification</a>. Une ancienne version signée avec une autre clé doit être désinstallée avant cette installation ; sauvegardez d’abord ses éventuelles données utiles.</p></details>
       <details><summary>Quel réseau utiliser ?<span>+</span></summary><p>Privilégiez un Wi-Fi de confiance, idéalement 5 GHz. La vidéo et l'audio WebRTC sont chiffrés ; les échanges HTTP locaux et les flux HLS Cast/DLNA ne le sont pas. Éteindre l’écran arrête la capture ; une nouvelle autorisation permet de reprendre. Un changement de réseau peut nécessiter un nouvel appairage.</p></details>
     </div></section>
   </main>

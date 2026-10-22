@@ -35,4 +35,10 @@ Samsung Tizen et LG webOS ne peuvent pas installer un APK Android : utiliser un 
 
 Ajouter des APK avec de nouveaux noms de version, actualiser les empreintes SHA-256 et les liens de la page, puis exécuter `npm test`. Les APK portant une version utilisent un cache immutable ; ne pas remplacer un binaire déjà publié sous le même nom.
 
-Les clés de signature, mots de passe, sources Android, fichiers QA et identifiants Vercel ne sont pas distribués dans ce dépôt.
+Les clés de signature, mots de passe et identifiants Vercel ne sont pas distribués dans ce dépôt.
+
+## Préversion AirPlay 0.4.0
+
+`public/downloads/PhoneMirror-TV-AirPlay-0.4.0.apk` est une application TV distincte (`local.phonemirror.tv.airplay`) qui reçoit la recopie d'écran native de l'iPhone. Elle peut coexister avec les APK Android 0.3.1. Le site conserve ces deux téléchargements et ajoute un troisième téléchargement réservé à AirPlay.
+
+Cette préversion est compilée et signée, mais n'est pas validée sur un iPhone et une télévision physiques. Aucun test supplémentaire n'a été exécuté après la demande de livraison sans tests. Consulter `AIRPLAY-0.4.0.md` pour les limites et l'état exact des vérifications. Les sources adaptées sous GPL-3.0 et les notices sont fournies dans `PhoneMirror-TV-AirPlay-0.4.0-sources.zip` ; aucune clé de signature n'y est incluse. `RELEASES.json` distingue les versions et canaux des trois APK, et `SHA256.json` fournit leurs empreintes.
