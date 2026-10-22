@@ -6,6 +6,7 @@
   "outputDirectory": "public",
   "headers": [
     {"source": "/downloads/SHA256.json", "headers": [{"key": "Cache-Control", "value": "no-cache"}]},
+    {"source": "/downloads/RELEASES.json", "headers": [{"key": "Cache-Control", "value": "no-cache"}]},
     {"source": "/downloads/(.*)\\.apk", "headers": [
       {"key": "Content-Type", "value": "application/vnd.android.package-archive"},
       {"key": "Content-Disposition", "value": "attachment"},

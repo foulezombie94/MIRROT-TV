@@ -12,9 +12,9 @@
     "channel": "beta"
   },
   {
-    "file": "PhoneMirror-TV-AirPlay-0.4.0.apk",
-    "version": "0.4.0",
-    "versionName": "0.4.0-airplay",
+    "file": "PhoneMirror-TV-AirPlay-0.4.1.apk",
+    "version": "0.4.1",
+    "versionName": "0.4.1-airplay",
     "platform": "android-tv-airplay",
     "channel": "preview",
     "physicalDeviceValidation": false
